@@ -359,10 +359,11 @@ const Product = ({ translations, currentLang }) => {
                                                 Buy Direct
                                             </button>
                                             <a 
+                                                id="amazon"
                                                 href="https://www.amazon.in/Dr-Alcofree-Natural-Alcohol-Recovery/dp/B0B28KXNL7" 
                                                 target="_blank" 
                                                 rel="noopener noreferrer"
-                                                className="flex-1 bg-orange-500 hover:bg-orange-600 text-white py-3 rounded-xl text-lg font-bold text-center transition-all duration-300 shadow-lg flex items-center justify-center"
+                                                className="amazon flex-1 bg-orange-500 hover:bg-orange-600 text-white py-3 rounded-xl text-lg font-bold text-center transition-all duration-300 shadow-lg flex items-center justify-center"
                                             >
                                                 <span className="mr-2">🛒</span>
                                                 Amazon

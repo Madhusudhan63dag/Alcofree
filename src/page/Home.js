@@ -129,7 +129,6 @@ const ProductSection = () => {
     );
 };
 
-
 const Product = ({ currentLang, translations }) => {
     const productRef = useRef(null);
 
@@ -162,139 +161,6 @@ const Product = ({ currentLang, translations }) => {
                     </div>
                 </div>
             </div>
-            {/* Featured Media Coverage Slider */}
-            {/* <div className="w-full bg-gradient-to-r from-blue-600 to-purple-600 py-8 mb-8">
-
-
-                <div className="text-center mb-6">
-                    <div className="flex justify-center items-center space-x-4 mb-4 overflow-hidden">
-                        <div className="flex space-x-6 animate-pulse">
-                            {[pr1, pr2, pr3, pr4, pr5].map((logo, index) => (
-                                <div key={index} className=" flex items-center justify-center">
-                                    <img 
-                                        src={logo} 
-                                        alt={`Media ${index + 1}`}
-                                        className="w-6 h-6 md:w-24 md:h-24 object-contain"
-                                    />
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                    
-                    <div className="relative">
-                        <h3 className="text-3xl md:text-4xl font-bold text-white mb-2 relative">
-                            <span className="bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">
-                                🔥 TRENDING NOW 
-                            </span>
-                            <span className="block text-2xl md:text-3xl mt-2">
-                                Media Spotlight
-                            </span>
-                        </h3>
-                        
-                        <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-yellow-300 to-orange-300 rounded-full animate-pulse"></div>
-                    </div>
-                    
-                    <p className="text-blue-100 mt-4 text-lg">
-                        🌟 Dr. Joints making headlines across India's top news platforms
-                    </p>
-                    
-                    <div className="flex justify-center items-center mt-3">
-                        <div className="flex items-center space-x-2 bg-red-500 text-white px-3 py-1 rounded-full text-sm animate-bounce">
-                            <div className="w-2 h-2 bg-white rounded-full animate-ping"></div>
-                            <span className="font-medium">LIVE COVERAGE</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="relative w-full overflow-hidden">
-                    <div 
-                        className="flex transition-transform duration-1000 ease-in-out"
-                        style={{ transform: `translateX(-${currentMediaSlide * 100}%)` }}
-                    >
-                        {mediaLinks.map((item, index) => (
-                            <div key={index} className="w-full flex-shrink-0 px-4">
-                                <a 
-                                    href={item.link}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="group block"
-                                >
-                                    <div className="max-w-4xl mx-auto bg-white rounded-xl p-8 border border-gray-100 
-                                                  transform hover:scale-105 transition-all duration-300 
-                                                  hover:shadow-2xl shadow-xl relative overflow-hidden">
-                                        
-                                        <div className="absolute top-4 right-4 bg-gradient-to-r from-red-500 to-pink-500 
-                                                      text-white px-3 py-1 rounded-full text-xs font-bold 
-                                                      animate-pulse shadow-lg">
-                                            🔥 TRENDING
-                                        </div>
-                                        
-                                        <div className="text-center">
-                                            <div className="flex justify-center mb-6">
-                                                <div className="w-32 h-32 md:w-40 md:h-40 rounded-full 
-                                                              bg-gradient-to-br from-blue-50 to-purple-50 
-                                                              flex items-center justify-center shadow-lg
-                                                              group-hover:shadow-xl transition-all duration-300
-                                                              border-4 border-white">
-                                                    <img 
-                                                        src={item.icon} 
-                                                        alt={item.source}
-                                                        className="w-24 h-24 md:w-32 md:h-32 object-contain
-                                                                 group-hover:scale-110 transition-transform duration-300"
-                                                    />
-                                                </div>
-                                            </div>
-                                            <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                                                <span className="font-semibold text-blue-600">Dr. Joints Pain Relief Oil</span> 
-                                                <br />
-                                                
-                                            </p>
-                                            
-
-                                            <div className="flex items-center justify-center space-x-4">
-                                                <span className="text-blue-600 font-medium flex items-center
-                                                               group-hover:text-blue-800 transition-colors
-                                                               bg-blue-50 px-4 py-2 rounded-full">
-                                                    Read Full Story
-                                                    <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" 
-                                                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" 
-                                                              d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                                    </svg>
-                                                </span>
-                                            </div>
-                                            <div className="mt-4 flex justify-center">
-                                                <div className="flex items-center space-x-2 text-red-600 text-sm font-medium">
-                                                    <div className="w-2 h-2 bg-red-600 rounded-full animate-ping"></div>
-                                                    <span>Breaking: National Coverage</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-
-                <div className="flex justify-center mt-6 space-x-3">
-                    {mediaLinks.map((_, index) => (
-                        <button
-                            key={index}
-                            className={`w-3 h-3 rounded-full transition-all duration-300 transform ${
-                                index === currentMediaSlide 
-                                    ? 'bg-yellow-300 scale-125 shadow-lg' 
-                                    : 'bg-white/50 hover:bg-white/75 hover:scale-110'
-                            }`}
-                            onClick={() => setCurrentMediaSlide(index)}
-                        />
-                    ))}
-                </div>
-            </div> */}
-
-            {/* <div>
-                <img src={one_two} alt="One" className="w-full mt-10 h-auto object-cover" />
-            </div> */}
         </div>
     );
 };
@@ -580,10 +446,11 @@ const AmazonSection = () => {
 
                                 <div className="flex flex-col sm:flex-row gap-4">
                                     <a 
+                                        id="amazon"
                                         href="https://www.amazon.in/Dr-Alcofree-Natural-Alcohol-Recovery/dp/B0B28KXNL7" 
                                         target="_blank" 
                                         rel="noopener noreferrer"
-                                        className="flex-1 bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded-lg text-center transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                                        className="amazon flex-1 bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded-lg text-center transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
                                     >
                                         Shop on Amazon
                                     </a>
@@ -804,6 +671,42 @@ const UrgencySection = () => {
     );
 };
 
+const YouTubeSection = () => {
+    return (
+        <div className="bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50 py-16">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                {/* Header */}
+                <div className="text-center mb-12">
+                    
+                    <h2 className="text-4xl font-bold text-gray-800 mb-4">
+                        See How <span className="text-blue-600">Dr. Alcofree</span> Works
+                    </h2>
+                    <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                        Watch real stories of transformation and learn how our natural formula supports your journey to an alcohol-free life.
+                    </p>
+                </div>
+
+                {/* Featured Video */}
+                <div className="max-w-4xl mx-auto mb-12">
+                    <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-200">
+                        <div className="relative aspect-video">
+                            <iframe
+                                className="w-full h-full rounded-t-2xl"
+                                src="https://www.youtube.com/embed/OMZullz8DCc"
+                                title="Dr. Alcofree - Natural Alcohol Recovery Solution"
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                            ></iframe>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+};
+
 
 
 
@@ -816,6 +719,7 @@ const Home = ({ currentLang, translations }) => {
                     <Hero currentLang={currentLang} />
                     <Product currentLang={currentLang} translations={translations} />
                     <ProductSection currentLang={currentLang} />
+                    <YouTubeSection />
                     <UrgencySection />
                     <AmazonSection />
                     <FAQ currentLang={currentLang} translations={translations} />
