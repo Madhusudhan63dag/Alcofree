@@ -41,7 +41,7 @@ const Product = ({ translations, currentLang }) => {
     const [timeLeft, setTimeLeft] = useState({ hours: 23, minutes: 45, seconds: 30 });
     const [currency, setCurrency] = useState('INR');
     const [stockCount, setStockCount] = useState(12); // Add stock count state
-    const productPrice = currency === 'USD' ? 120 : 2990; // Update to match urgency price
+    const productPrice = currency === 'USD' ? 120 : 3990; // Update to match urgency price
     const originalPrice = currency === 'USD' ? 180 : 6990;
 
 
@@ -102,7 +102,7 @@ const Product = ({ translations, currentLang }) => {
     const productImages = [product1, product2, product3];
 
     return (
-        <div className="w-full">
+        <div className="w-full overflow-x-hidden">
             {/* Urgent Flash Sale Banner - Top of page */}
             <div className="bg-gradient-to-r from-red-600 to-orange-500 text-white py-3 mb-6 animate-pulse">
                 <div className="container mx-auto px-4 text-center">
@@ -353,6 +353,22 @@ const Product = ({ translations, currentLang }) => {
                                             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-30 transform translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
                                         </button>
 
+                                        {/* Amazon Button */}
+                                        <div className="flex gap-2 mb-3">
+                                            <button onClick={handleCheckout} className="flex-1 bg-green-600 hover:bg-green-700 text-white py-3 rounded-xl text-lg font-bold transition-all duration-300 shadow-lg">
+                                                Buy Direct
+                                            </button>
+                                            <a 
+                                                href="https://www.amazon.in/Dr-Alcofree-Natural-Alcohol-Recovery/dp/B0B28KXNL7" 
+                                                target="_blank" 
+                                                rel="noopener noreferrer"
+                                                className="flex-1 bg-orange-500 hover:bg-orange-600 text-white py-3 rounded-xl text-lg font-bold text-center transition-all duration-300 shadow-lg flex items-center justify-center"
+                                            >
+                                                <span className="mr-2">🛒</span>
+                                                Amazon
+                                            </a>
+                                        </div>
+
                                         <div className="text-center text-yellow-200 text-sm font-bold animate-pulse">
                                             ⚠️ WARNING: Price returns to ₹6,990 in {String(timeLeft.hours).padStart(2, '0')}:{String(timeLeft.minutes).padStart(2, '0')}:{String(timeLeft.seconds).padStart(2, '0')}
                                         </div>
@@ -404,14 +420,13 @@ const Product = ({ translations, currentLang }) => {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    
-                    {/* Desktop slider section */}
-                    <div className="bg-white rounded-lg p-4 mt-6 overflow-hidden relative">
-                        <div className="flex transition-transform duration-500 ease-in-out"
-                            style={{
-                                transform: `translateX(-${selectedOffer * 100}%)`,
-                                width: '400%'
+                        
+                        {/* Desktop slider section */}
+                        <div className="bg-white rounded-lg p-4 mt-6 overflow-hidden relative">
+                            <div className="flex transition-transform duration-500 ease-in-out"
+                                style={{
+                                    transform: `translateX(-${selectedOffer * 100}%)`,
+                                    width: '400%'
                             }}>
                             { [
                                 {
@@ -432,6 +447,45 @@ const Product = ({ translations, currentLang }) => {
                                     description: "Best value treatment pack — five convenient 30ml bottles for complete recovery course.",
                                     color: "bg-white"
                                 }                                  
+                            ].map((offer, index) => (
+                                <div key={index} className={`w-full flex-shrink-0 ${offer.color} p-4 rounded-lg border border-gray-200`}>
+                                    <div className="pdp-coupon">
+                                        <h3 className="text-lg font-semibold text-gray-800 mb-2">{offer.title}</h3>
+                                        <h4 className="text-xl text-gray-900 mb-2">{offer.subtitle}</h4>
+                                        <p className="text-gray-700">{offer.description}</p>
+                                    </div>
+                                </div>
+                            ))}
+                            </div>
+                        </div>
+                    </div>
+                    
+                    {/* Desktop slider section */}
+                    <div className="bg-white rounded-lg p-4 mt-6 overflow-hidden relative">
+                        <div className="flex transition-transform duration-500 ease-in-out"
+                            style={{
+                                transform: `translateX(-${selectedOffer * 100}%)`,
+                                width: '400%'
+                            }}>
+                            { [
+                                {
+                                    title: "Available offer",
+                                    subtitle: "10% Off on Online Payment",
+                                    description: "Extra discount on prepaid orders for 5-bottle pack",
+                                    color: "bg-white"
+                                },
+                                {
+                                    title: "Available offer",
+                                    subtitle: "15 Days Return Policy",
+                                    description: "Hassle-free returns within 15 days on unopened bottles",
+                                    color: "bg-white"
+                                },
+                                {
+                                    title: "Available offer",
+                                    subtitle: "Complete 5-Bottle Treatment Pack",
+                                    description: "Best value for complete recovery - 5 bottles of 30ml each",
+                                    color: "bg-white"
+                                }
                             ].map((offer, index) => (
                                 <div key={index} className={`w-full flex-shrink-0 ${offer.color} p-4 rounded-lg border border-gray-200`}>
                                     <div className="pdp-coupon">
@@ -531,11 +585,27 @@ const Product = ({ translations, currentLang }) => {
 
                                 <button
                                     onClick={handleCheckout}
-                                    className="w-full bg-yellow-400 hover:bg-yellow-500 text-green-800 py-4 rounded-xl text-lg font-black transform active:scale-95 transition-all duration-200 shadow-lg relative overflow-hidden group"
+                                    className="w-full bg-yellow-400 hover:bg-yellow-500 text-green-800 py-4 rounded-xl text-lg font-black transform active:scale-95 transition-all duration-200 shadow-lg relative overflow-hidden group mb-3"
                                 >
                                     <span className="relative z-10">🚀 SECURE LAST {stockCount} BOTTLES NOW!</span>
                                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-active:opacity-30 transform translate-x-[-100%] group-active:translate-x-[100%] transition-transform duration-500"></div>
                                 </button>
+
+                                {/* Mobile Amazon Button */}
+                                <div className="flex gap-2 mb-3">
+                                    <button onClick={handleCheckout} className="flex-1 bg-green-600 hover:bg-green-700 text-white py-3 rounded-xl text-sm font-bold transition-all duration-300">
+                                        Buy Direct
+                                    </button>
+                                    <a 
+                                        href="https://www.amazon.in/Dr-Alcofree-Natural-Alcohol-Recovery/dp/B0B28KXNL7" 
+                                        target="_blank" 
+                                        rel="noopener noreferrer"
+                                        className="flex-1 bg-orange-500 hover:bg-orange-600 text-white py-3 rounded-xl text-sm font-bold text-center transition-all duration-300 flex items-center justify-center"
+                                    >
+                                        <span className="mr-1">🛒</span>
+                                        Amazon
+                                    </a>
+                                </div>
 
                                 <div className="text-center mt-3 text-yellow-200 text-xs font-bold animate-pulse">
                                     ⚠️ Price jumps to ₹6,990 in {String(timeLeft.hours).padStart(2, '0')}:{String(timeLeft.minutes).padStart(2, '0')}:{String(timeLeft.seconds).padStart(2, '0')}
@@ -770,12 +840,26 @@ const Product = ({ translations, currentLang }) => {
                 <div className="container mx-auto px-4 text-center">
                     <h2 className="text-4xl font-bold text-white mb-4">Ready to Start Your Recovery Journey?</h2>
                     <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">Join thousands of satisfied customers who have found freedom from alcohol cravings with our complete 5-bottle treatment pack</p>
-                    <button
-                        onClick={handleCheckout}
-                        className="bg-white text-blue-600 px-12 py-4 rounded-full text-xl font-bold hover:bg-gray-100 transition-colors shadow-xl"
-                    >
-                        Order Now
-                    </button>
+                    
+                    {/* Dual Purchase Options */}
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8 max-w-md mx-auto">
+                        <button
+                            onClick={handleCheckout}
+                            className="w-full sm:flex-1 bg-white text-blue-600 px-8 py-4 rounded-full text-xl font-bold hover:bg-gray-100 transition-colors shadow-xl"
+                        >
+                            Order Direct
+                        </button>
+                        <a 
+                            href="https://www.amazon.in/Dr-Alcofree-Natural-Alcohol-Recovery/dp/B0B28KXNL7" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="w-full sm:flex-1 bg-orange-500 text-white px-8 py-4 rounded-full text-xl font-bold hover:bg-orange-600 transition-colors shadow-xl text-center flex items-center justify-center"
+                        >
+                            <span className="mr-2">🛒</span>
+                            Buy on Amazon
+                        </a>
+                    </div>
+
                     <div className="flex items-center justify-center mt-6 gap-8 text-blue-100">
                         <div className="flex items-center gap-2">
                             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
@@ -795,6 +879,11 @@ const Product = ({ translations, currentLang }) => {
                             </svg>
                             <span>100% Natural</span>
                         </div>
+                    </div>
+
+                    {/* Platform Info */}
+                    <div className="mt-8 text-blue-200 text-sm">
+                        <p>🌟 Same authentic Dr. Alcofree product available on multiple trusted platforms</p>
                     </div>
                 </div>
             </div>

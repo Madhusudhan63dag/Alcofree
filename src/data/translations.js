@@ -300,8 +300,8 @@ export const translations = {
       title: "Terms & Conditions",
       sections: [
         {
-          title: "Welcome to Dr.Alcofree!",
-          content: "These terms and conditions outline the rules and regulations for the use of Dr.Alcofree Website, located at https://preview.scioondigital.com/dynamic/joints, A product of Pain Relief Oil. By accessing this website we assume you accept these terms and conditions. Do not continue to use Dr.Alcofree if you do not agree to take all of the terms and conditions stated on this page."
+          title: "Welcome to Dr. Alcofree!",
+          content: "These terms and conditions outline the rules and regulations for the use of Dr. Alcofree Website, located at https://www.dralcofree.com, A natural herbal supplement for alcohol recovery support. By accessing this website we assume you accept these terms and conditions. Do not continue to use Dr. Alcofree if you do not agree to take all of the terms and conditions stated on this page."
         },
         {
           title: "Definitions",
@@ -309,24 +309,24 @@ export const translations = {
         },
         {
           title: "Cookies",
-          content: "We employ the use of cookies. By accessing Dr.Alcofree, you agree to use cookies in agreement with Dr.Alcofree's Privacy Policy. Most interactive websites use cookies to let us retrieve the user's details for each visit. Cookies are used by our website to enable the functionality of certain areas to make it easier for people visiting our website. Some of our affiliate/advertising partners may also use cookies."
+          content: "We employ the use of cookies. By accessing Dr. Alcofree, you agree to use cookies in agreement with Dr. Alcofree's Privacy Policy. Most interactive websites use cookies to let us retrieve the user's details for each visit. Cookies are used by our website to enable the functionality of certain areas to make it easier for people visiting our website. Some of our affiliate/advertising partners may also use cookies."
         },
         {
           title: "License",
-          content: "Unless otherwise stated, Dr.Alcofree and/or its licensors own the intellectual property rights for all material on Dr.Alcofree. All intellectual property rights are reserved. You may access this from Dr.Alcofree for your personal use subject to restrictions set in these terms and conditions."
+          content: "Unless otherwise stated, Dr. Alcofree and/or its licensors own the intellectual property rights for all material on Dr. Alcofree. All intellectual property rights are reserved. You may access this from Dr. Alcofree for your personal use subject to restrictions set in these terms and conditions."
         },
         {
           title: "You must not:",
           content: [
-            "Republish material from Dr.Alcofree",
-            "Sell, rent, or sub-license material from Dr.Alcofree",
-            "Reproduce, duplicate, or copy material from Dr.Alcofree",
-            "Redistribute content from Dr.Alcofree"
+            "Republish material from Dr. Alcofree",
+            "Sell, rent, or sub-license material from Dr. Alcofree",
+            "Reproduce, duplicate, or copy material from Dr. Alcofree",
+            "Redistribute content from Dr. Alcofree"
           ]
         },
         {
           title: "User Comments",
-          content: "Parts of this website offer an opportunity for users to post and exchange opinions and information in certain areas of the website. Dr.Alcofree does not filter, edit, publish, or review Comments before their presence on the website. Comments do not reflect the views and opinions of Dr.Alcofree, its agents, and/or affiliates. Comments reflect the views and opinions of the person who posts their views and opinions. To the extent permitted by applicable laws, Dr.Alcofree shall not be liable for the Comments or any liability, damages, or expenses caused and/or suffered as a result of any use of and/or posting of and/or appearance of the Comments on this website."
+          content: "Parts of this website offer an opportunity for users to post and exchange opinions and information in certain areas of the website. Dr. Alcofree does not filter, edit, publish, or review Comments before their presence on the website. Comments do not reflect the views and opinions of Dr. Alcofree, its agents, and/or affiliates. Comments reflect the views and opinions of the person who posts their views and opinions. To the extent permitted by applicable laws, Dr. Alcofree shall not be liable for the Comments or any liability, damages, or expenses caused and/or suffered as a result of any use of and/or posting of and/or appearance of the Comments on this website."
         },
         {
           title: "Content Liability",

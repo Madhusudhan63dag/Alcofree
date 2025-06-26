@@ -641,10 +641,10 @@ const UrgencySection = () => {
     }, []);
 
     return (
-        <div className="bg-gradient-to-r from-red-600 via-red-500 to-orange-500 py-16 relative overflow-hidden">
+        <div className="bg-gradient-to-r from-green-600 via-green-500 to-emerald-500 py-16 relative overflow-hidden">
             {/* Animated Background */}
             <div className="absolute inset-0">
-                <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-red-600/20 to-orange-500/20 animate-pulse"></div>
+                <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-green-600/20 to-emerald-500/20 animate-pulse"></div>
                 <div className="absolute top-10 left-10 w-32 h-32 bg-white/10 rounded-full animate-bounce"></div>
                 <div className="absolute bottom-10 right-10 w-24 h-24 bg-white/10 rounded-full animate-bounce" style={{animationDelay: '1s'}}></div>
             </div>
@@ -654,13 +654,13 @@ const UrgencySection = () => {
                 <div className="text-center mb-12">
                     <div className="inline-flex items-center bg-white rounded-full px-6 py-3 shadow-lg mb-6 animate-pulse">
                         <span className="text-2xl mr-3">⚡</span>
-                        <span className="text-red-600 font-bold text-lg">FLASH SALE ENDING SOON</span>
+                        <span className="text-green-600 font-bold text-lg">FLASH SALE ENDING SOON</span>
                     </div>
                     
                     <h2 className="text-5xl font-bold text-white mb-4">
                         Limited Time Offer!
                     </h2>
-                    <p className="text-xl text-red-100 max-w-3xl mx-auto">
+                    <p className="text-xl text-green-100 max-w-3xl mx-auto">
                         Don't miss your chance to start your alcohol-free journey at the lowest price ever!
                     </p>
                 </div>
@@ -669,20 +669,20 @@ const UrgencySection = () => {
                 <div className="bg-black/30 backdrop-blur-sm rounded-2xl p-8 mb-12 border border-white/20">
                     <div className="text-center mb-6">
                         <h3 className="text-2xl font-bold text-white mb-2">Sale Ends In:</h3>
-                        <p className="text-red-200">Hurry! This exclusive discount won't last long</p>
+                        <p className="text-green-200">Hurry! This exclusive discount won't last long</p>
                     </div>
                     
                     <div className="grid grid-cols-3 gap-4 max-w-md mx-auto">
                         <div className="bg-white rounded-lg p-4 text-center shadow-lg">
-                            <div className="text-3xl font-bold text-red-600">{String(timeLeft.hours).padStart(2, '0')}</div>
+                            <div className="text-3xl font-bold text-green-600">{String(timeLeft.hours).padStart(2, '0')}</div>
                             <div className="text-sm text-gray-600 font-medium">HOURS</div>
                         </div>
                         <div className="bg-white rounded-lg p-4 text-center shadow-lg">
-                            <div className="text-3xl font-bold text-red-600">{String(timeLeft.minutes).padStart(2, '0')}</div>
+                            <div className="text-3xl font-bold text-green-600">{String(timeLeft.minutes).padStart(2, '0')}</div>
                             <div className="text-sm text-gray-600 font-medium">MINUTES</div>
                         </div>
                         <div className="bg-white rounded-lg p-4 text-center shadow-lg animate-pulse">
-                            <div className="text-3xl font-bold text-red-600">{String(timeLeft.seconds).padStart(2, '0')}</div>
+                            <div className="text-3xl font-bold text-green-600">{String(timeLeft.seconds).padStart(2, '0')}</div>
                             <div className="text-sm text-gray-600 font-medium">SECONDS</div>
                         </div>
                     </div>
@@ -697,46 +697,46 @@ const UrgencySection = () => {
                                 <span className="text-2xl text-white font-bold">Special Price:</span>
                                 <div className="text-right">
                                     <div className="text-3xl font-bold text-yellow-300">₹3,990</div>
-                                    <div className="text-lg text-red-200 line-through">₹6,990</div>
+                                    <div className="text-lg text-green-200 line-through">₹6,990</div>
                                 </div>
                             </div>
                             
-                            <div className="bg-green-500 text-white px-4 py-2 rounded-lg text-center font-bold mb-4">
+                            <div className="bg-emerald-500 text-white px-4 py-2 rounded-lg text-center font-bold mb-4">
                                 Save ₹4,000 (57% OFF)
                             </div>
                         </div>
 
                         {/* Stock Alert */}
-                        <div className="bg-red-700/50 border border-red-400 rounded-lg p-4 mb-6">
+                        <div className="bg-emerald-700/50 border border-emerald-400 rounded-lg p-4 mb-6">
                             <div className="flex items-center justify-between mb-2">
                                 <span className="text-white font-semibold">🔥 Only {stockCount} left in stock!</span>
-                                <span className="text-red-200 text-sm animate-pulse">High Demand</span>
+                                <span className="text-green-200 text-sm animate-pulse">High Demand</span>
                             </div>
-                            <div className="w-full bg-red-900 rounded-full h-2">
+                            <div className="w-full bg-emerald-900 rounded-full h-2">
                                 <div 
-                                    className="bg-gradient-to-r from-yellow-400 to-red-400 h-2 rounded-full transition-all duration-1000"
+                                    className="bg-gradient-to-r from-yellow-400 to-emerald-400 h-2 rounded-full transition-all duration-1000"
                                     style={{ width: `${(stockCount / 100) * 100}%` }}
                                 ></div>
                             </div>
-                            <p className="text-red-200 text-xs mt-1">Stock selling fast!</p>
+                            <p className="text-green-200 text-xs mt-1">Stock selling fast!</p>
                         </div>
 
                         {/* Bonus Offers */}
                         <div className="space-y-3 mb-6">
                             <div className="flex items-center space-x-3 text-white">
-                                <svg className="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                                <svg className="w-5 h-5 text-emerald-400" fill="currentColor" viewBox="0 0 20 20">
                                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                                 </svg>
                                 <span>FREE shipping (worth ₹200)</span>
                             </div>
                             <div className="flex items-center space-x-3 text-white">
-                                <svg className="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                                <svg className="w-5 h-5 text-emerald-400" fill="currentColor" viewBox="0 0 20 20">
                                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                                 </svg>
                                 <span>15-day money-back guarantee</span>
                             </div>
                             <div className="flex items-center space-x-3 text-white">
-                                <svg className="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                                <svg className="w-5 h-5 text-emerald-400" fill="currentColor" viewBox="0 0 20 20">
                                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                                 </svg>
                                 <span>Bonus wellness guide (worth ₹1,500)</span>
@@ -757,12 +757,6 @@ const UrgencySection = () => {
                         <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
                             <h4 className="text-xl font-bold text-white mb-4">🔥 Recent Purchases</h4>
                             <div className="space-y-3">
-                                {/*
-                                    { name: "Rajesh K.", location: "Mumbai", time: "2 minutes ago" },
-                                    { name: "Priya S.", location: "Delhi", time: "5 minutes ago" },
-                                    { name: "Amit P.", location: "Bangalore", time: "8 minutes ago" },
-                                    { name: "Sneha M.", location: "Pune", time: "12 minutes ago" }
-                                */}
                                 { [
                                     { name: "Rajesh K.", location: "Chennai", time: "2 minutes ago" },
                                     { name: "Priya S.", location: "Bangalore", time: "5 minutes ago" },
@@ -772,9 +766,9 @@ const UrgencySection = () => {
                                     <div key={index} className="flex items-center justify-between text-white border-b border-white/20 pb-2">
                                         <div>
                                             <span className="font-medium">{purchase.name}</span>
-                                            <span className="text-red-200 text-sm ml-2">{purchase.location}</span>
+                                            <span className="text-green-200 text-sm ml-2">{purchase.location}</span>
                                         </div>
-                                        <span className="text-green-300 text-xs">{purchase.time}</span>
+                                        <span className="text-emerald-300 text-xs">{purchase.time}</span>
                                     </div>
                                 ))}
                             </div>
@@ -784,15 +778,15 @@ const UrgencySection = () => {
                         <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 text-center">
                             <div className="text-4xl font-bold text-yellow-300 mb-2">10,000+</div>
                             <div className="text-white font-medium">Satisfied Customers</div>
-                            <div className="text-red-200 text-sm">Join them today!</div>
+                            <div className="text-green-200 text-sm">Join them today!</div>
                         </div>
 
                         {/* Risk-Free Guarantee */}
-                        <div className="bg-green-600/20 border border-green-400 rounded-xl p-6">
+                        <div className="bg-emerald-600/20 border border-emerald-400 rounded-xl p-6">
                             <div className="text-center">
                                 <div className="text-3xl mb-2">🛡️</div>
                                 <h4 className="text-xl font-bold text-white mb-2">100% Risk-Free</h4>
-                                <p className="text-green-200 text-sm">Not satisfied? Get your money back within 15 days. No questions asked!</p>
+                                <p className="text-emerald-200 text-sm">Not satisfied? Get your money back within 15 days. No questions asked!</p>
                             </div>
                         </div>
                     </div>
@@ -800,9 +794,9 @@ const UrgencySection = () => {
 
                 {/* Bottom Warning */}
                 <div className="text-center mt-8">
-                    <div className="bg-red-700/50 border border-red-400 rounded-lg p-4 max-w-2xl mx-auto">
+                    <div className="bg-emerald-700/50 border border-emerald-400 rounded-lg p-4 max-w-2xl mx-auto">
                         <p className="text-white font-bold text-lg">⚠️ WARNING: Price will return to ₹6,990 after this sale!</p>
-                        <p className="text-red-200 text-sm">This is your last chance to get Dr. Alcofree at this special price</p>
+                        <p className="text-green-200 text-sm">This is your last chance to get Dr. Alcofree at this special price</p>
                     </div>
                 </div>
             </div>

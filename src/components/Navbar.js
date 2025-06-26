@@ -149,7 +149,7 @@ const Navbar = ({ currentLang, setCurrentLang, translations, languages }) => {
                     <div className="hidden md:flex items-center px-2">
                         <a href={nav.homelink || "#"}
                             className={`text-gray-700 hover:text-blue-600 flex justify-center px-3 py-2 hover:scale-110 transition-transform bounce ${isLoaded ? 'pop-in staggered-item' : 'opacity-0'}`}>
-                            <img src={icons_one} alt="Home Icon" className="inline-block h-6 w-6 mr-1" />
+                            {/* <img src={icons_one} alt="Home Icon" className="inline-block h-6 w-6 mr-1" /> */}
                             <span className="color-cycle">{nav.home}</span>
                         </a>
                         <a href={nav.aboutUslink || "#"}
