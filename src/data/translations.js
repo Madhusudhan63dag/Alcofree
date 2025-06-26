@@ -84,7 +84,7 @@ export const translations = {
       testimonial: [
         {
           image: one,
-          text: "Dr. Alcofree helped me gain control over my drinking habits. After years of struggling, this product helped reduce my cravings and supported my liver health. I feel more energetic and focused than I have in years.",
+          text: "Dr. AlcoFree helped me gain control over my drinking habits. After years of struggling, this product helped reduce my cravings and supported my liver health. I feel more energetic and focused than I have in years.",
           name: 'RAHUL VERMA',
           role: 'Marketing Executive',
           rating: 5,
@@ -98,21 +98,7 @@ export const translations = {
         },
         {
           image: two,
-          text: "I used to drink socially but it started affecting my sleep and productivity. Dr. Alcofree made cutting back easier without making me feel deprived. Now, I sleep better and feel emotionally balanced.",
-          name: 'PRIYA SHETTY',
-          role: 'Graphic Designer',
-          rating: 5,
-          location: 'Karnataka, Bangalore',
-          beforeAfter: [
-            'Sleep improved within a week',
-            'Less irritability',
-            'Enhanced mood and energy',
-            'No weekend drinking cravings'
-          ]
-        },
-        {
-          image: three,
-          text: "As someone in recovery, I was always looking for a natural way to stay on track. Dr. Alcofree supports my body and keeps my mind focused. It’s part of my daily wellness routine now.",
+          text: "As someone in recovery, I was always looking for a natural way to stay on track. Dr. AlcoFree supports my body and keeps my mind focused. It’s part of my daily wellness routine now.",
           name: 'NITESH GUPTA',
           role: 'Fitness Trainer',
           rating: 5,
@@ -125,20 +111,34 @@ export const translations = {
           ]
         },
         {
-          image: four,
-          text: "After hitting rock bottom with my drinking, I knew I needed help. Dr. Alcofree gave me the boost I needed to regain control and stay sober. It helped with stress and made detox easier.",
-          name: 'REKHA MENON',
-          role: 'Freelance Writer',
+          image: three,
+          text: "I started using Dr. AlcoFree during my transition to a healthier lifestyle. It not only reduced my urge to drink but also improved my digestion and energy levels. Highly recommended.",
+          name: 'SURESH REDDY',
+          role: 'Software Engineer',
           rating: 5,
-          location: 'Kerala, Kochi',
+          location: 'Hyderabad, Telangana',
           beforeAfter: [
-            'Better emotional balance',
-            'Reduced withdrawal anxiety',
-            'Clearer thinking',
-            'Improved self-discipline'
+            'Reduced weekend cravings',
+            'Improved liver profile',
+            'More active mornings',
+            'Boosted confidence'
+          ]
+        },
+        {
+          image: four,
+          text: "Dr. AlcoFree helped me during a crucial detox phase. It supported my liver and kept me mentally calm without any side effects. It’s truly a game-changer for anyone serious about quitting alcohol.",
+          name: 'VIKRAM DESAI',
+          role: 'Entrepreneur',
+          rating: 5,
+          location: 'Mumbai, Maharashtra',
+          beforeAfter: [
+            'Eased alcohol withdrawal',
+            'Steady mental clarity',
+            'No binge episodes',
+            'Detox felt smoother'
           ]
         }
-      ]
+      ]      
     },    
     contact: {
       title: 'Contact Us',

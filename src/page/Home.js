@@ -503,6 +503,313 @@ const Testimonials = ({ currentLang, translations }) => {
     );
 };
 
+const AmazonSection = () => {
+    return (
+        <div className="bg-gradient-to-br from-orange-50 via-yellow-50 to-orange-100 py-16">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                {/* Header */}
+                <div className="text-center mb-12">
+                    
+                    <h2 className="text-4xl font-bold text-gray-800 mb-4">
+                        Also Available on <span className="text-orange-600">Amazon</span>
+                    </h2>
+                    <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                        Shop Dr. Alcofree from your preferred platform. Same authentic product, multiple trusted channels.
+                    </p>
+                </div>
+
+                {/* Amazon Card */}
+                <div className="max-w-4xl mx-auto">
+                    <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-200 hover:shadow-2xl transition-all duration-300">
+                        <div className="grid md:grid-cols-2 gap-0">
+                            {/* Amazon Logo Side */}
+                            <div className="bg-gradient-to-br from-orange-500 to-yellow-500 p-12 flex items-center justify-center relative overflow-hidden">
+                                <div className="absolute inset-0 bg-grid-white/[0.1] bg-[size:20px_20px]" />
+                                <div className="relative z-10 text-center">
+                                    <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center mb-6 mx-auto shadow-lg">
+                                        <svg className="w-12 h-12 text-orange-600" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M13.12 2.06L7.58 7.6c-.37.37-.58.88-.58 1.41V19c0 1.1.9 2 2 2h9c.8 0 1.52-.48 1.84-1.21l3.26-7.61C23.94 10.2 22.49 8 20.34 8H14.5l1.76-5.24c.15-.45-.24-.81-.69-.81-.23 0-.45.09-.61.24z"/>
+                                        </svg>
+                                    </div>
+                                    <h3 className="text-3xl font-bold text-white mb-2">Amazon</h3>
+                                    <p className="text-orange-100 text-lg">Trusted Marketplace</p>
+                                </div>
+                            </div>
+
+                            {/* Content Side */}
+                            <div className="p-8">
+                                <h4 className="text-2xl font-bold text-gray-800 mb-6">Why Choose Amazon?</h4>
+                                
+                                <div className="space-y-4 mb-8">
+                                    <div className="flex items-center space-x-3">
+                                        <div className="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
+                                            <svg className="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                                            </svg>
+                                        </div>
+                                        <span className="text-gray-700 font-medium">Amazon Prime eligible - Fast delivery</span>
+                                    </div>
+                                    
+                                    <div className="flex items-center space-x-3">
+                                        <div className="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
+                                            <svg className="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                                            </svg>
+                                        </div>
+                                        <span className="text-gray-700 font-medium">Secure payment & buyer protection</span>
+                                    </div>
+                                    
+                                    <div className="flex items-center space-x-3">
+                                        <div className="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
+                                            <svg className="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                                            </svg>
+                                        </div>
+                                        <span className="text-gray-700 font-medium">Easy returns & customer support</span>
+                                    </div>
+                                    
+                                    <div className="flex items-center space-x-3">
+                                        <div className="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
+                                            <svg className="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                                            </svg>
+                                        </div>
+                                        <span className="text-gray-700 font-medium">Same authentic Dr. Alcofree product</span>
+                                    </div>
+                                </div>
+
+                                <div className="flex flex-col sm:flex-row gap-4">
+                                    <a 
+                                        href="https://www.amazon.in/Dr-Alcofree-Natural-Alcohol-Recovery/dp/B0B28KXNL7" 
+                                        target="_blank" 
+                                        rel="noopener noreferrer"
+                                        className="flex-1 bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded-lg text-center transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                                    >
+                                        Shop on Amazon
+                                    </a>
+                                    <a 
+                                        href="/product"
+                                        className="flex-1 border-2 border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white font-semibold py-3 px-6 rounded-lg text-center transition-all duration-300"
+                                    >
+                                        Shop Direct
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+const UrgencySection = () => {
+    const [timeLeft, setTimeLeft] = useState({ hours: 23, minutes: 45, seconds: 30 });
+    const [stockCount, setStockCount] = useState(47);
+
+    // Countdown timer effect
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setTimeLeft(prev => {
+                if (prev.seconds > 0) {
+                    return { ...prev, seconds: prev.seconds - 1 };
+                } else if (prev.minutes > 0) {
+                    return { hours: prev.hours, minutes: prev.minutes - 1, seconds: 59 };
+                } else if (prev.hours > 0) {
+                    return { hours: prev.hours - 1, minutes: 59, seconds: 59 };
+                } else {
+                    return { hours: 23, minutes: 59, seconds: 59 }; // Reset
+                }
+            });
+        }, 1000);
+
+        return () => clearInterval(timer);
+    }, []);
+
+    // Simulate stock decrease
+    useEffect(() => {
+        const stockTimer = setInterval(() => {
+            setStockCount(prev => {
+                if (prev > 15) {
+                    return Math.max(15, prev - Math.floor(Math.random() * 3));
+                }
+                return prev;
+            });
+        }, 30000); // Decrease stock every 30 seconds
+
+        return () => clearInterval(stockTimer);
+    }, []);
+
+    return (
+        <div className="bg-gradient-to-r from-red-600 via-red-500 to-orange-500 py-16 relative overflow-hidden">
+            {/* Animated Background */}
+            <div className="absolute inset-0">
+                <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-red-600/20 to-orange-500/20 animate-pulse"></div>
+                <div className="absolute top-10 left-10 w-32 h-32 bg-white/10 rounded-full animate-bounce"></div>
+                <div className="absolute bottom-10 right-10 w-24 h-24 bg-white/10 rounded-full animate-bounce" style={{animationDelay: '1s'}}></div>
+            </div>
+
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                {/* Flash Sale Header */}
+                <div className="text-center mb-12">
+                    <div className="inline-flex items-center bg-white rounded-full px-6 py-3 shadow-lg mb-6 animate-pulse">
+                        <span className="text-2xl mr-3">⚡</span>
+                        <span className="text-red-600 font-bold text-lg">FLASH SALE ENDING SOON</span>
+                    </div>
+                    
+                    <h2 className="text-5xl font-bold text-white mb-4">
+                        Limited Time Offer!
+                    </h2>
+                    <p className="text-xl text-red-100 max-w-3xl mx-auto">
+                        Don't miss your chance to start your alcohol-free journey at the lowest price ever!
+                    </p>
+                </div>
+
+                {/* Countdown Timer */}
+                <div className="bg-black/30 backdrop-blur-sm rounded-2xl p-8 mb-12 border border-white/20">
+                    <div className="text-center mb-6">
+                        <h3 className="text-2xl font-bold text-white mb-2">Sale Ends In:</h3>
+                        <p className="text-red-200">Hurry! This exclusive discount won't last long</p>
+                    </div>
+                    
+                    <div className="grid grid-cols-3 gap-4 max-w-md mx-auto">
+                        <div className="bg-white rounded-lg p-4 text-center shadow-lg">
+                            <div className="text-3xl font-bold text-red-600">{String(timeLeft.hours).padStart(2, '0')}</div>
+                            <div className="text-sm text-gray-600 font-medium">HOURS</div>
+                        </div>
+                        <div className="bg-white rounded-lg p-4 text-center shadow-lg">
+                            <div className="text-3xl font-bold text-red-600">{String(timeLeft.minutes).padStart(2, '0')}</div>
+                            <div className="text-sm text-gray-600 font-medium">MINUTES</div>
+                        </div>
+                        <div className="bg-white rounded-lg p-4 text-center shadow-lg animate-pulse">
+                            <div className="text-3xl font-bold text-red-600">{String(timeLeft.seconds).padStart(2, '0')}</div>
+                            <div className="text-sm text-gray-600 font-medium">SECONDS</div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Offer Details */}
+                <div className="grid md:grid-cols-2 gap-8 items-center">
+                    {/* Left Side - Offer Details */}
+                    <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+                        <div className="mb-6">
+                            <div className="flex items-center justify-between mb-4">
+                                <span className="text-2xl text-white font-bold">Special Price:</span>
+                                <div className="text-right">
+                                    <div className="text-3xl font-bold text-yellow-300">₹3,990</div>
+                                    <div className="text-lg text-red-200 line-through">₹6,990</div>
+                                </div>
+                            </div>
+                            
+                            <div className="bg-green-500 text-white px-4 py-2 rounded-lg text-center font-bold mb-4">
+                                Save ₹4,000 (57% OFF)
+                            </div>
+                        </div>
+
+                        {/* Stock Alert */}
+                        <div className="bg-red-700/50 border border-red-400 rounded-lg p-4 mb-6">
+                            <div className="flex items-center justify-between mb-2">
+                                <span className="text-white font-semibold">🔥 Only {stockCount} left in stock!</span>
+                                <span className="text-red-200 text-sm animate-pulse">High Demand</span>
+                            </div>
+                            <div className="w-full bg-red-900 rounded-full h-2">
+                                <div 
+                                    className="bg-gradient-to-r from-yellow-400 to-red-400 h-2 rounded-full transition-all duration-1000"
+                                    style={{ width: `${(stockCount / 100) * 100}%` }}
+                                ></div>
+                            </div>
+                            <p className="text-red-200 text-xs mt-1">Stock selling fast!</p>
+                        </div>
+
+                        {/* Bonus Offers */}
+                        <div className="space-y-3 mb-6">
+                            <div className="flex items-center space-x-3 text-white">
+                                <svg className="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                                </svg>
+                                <span>FREE shipping (worth ₹200)</span>
+                            </div>
+                            <div className="flex items-center space-x-3 text-white">
+                                <svg className="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                                </svg>
+                                <span>30-day money-back guarantee</span>
+                            </div>
+                            <div className="flex items-center space-x-3 text-white">
+                                <svg className="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                                </svg>
+                                <span>Bonus wellness guide (worth ₹1,500)</span>
+                            </div>
+                        </div>
+
+                        {/* CTA Button */}
+                        <a href="/product" className="block">
+                            <button className="w-full bg-gradient-to-r from-yellow-400 to-orange-400 text-black font-bold py-4 px-6 rounded-lg text-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl animate-pulse">
+                                🚀 CLAIM YOUR DISCOUNT NOW
+                            </button>
+                        </a>
+                    </div>
+
+                    {/* Right Side - Social Proof */}
+                    <div className="space-y-6">
+                        {/* Recent Purchases */}
+                        <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+                            <h4 className="text-xl font-bold text-white mb-4">🔥 Recent Purchases</h4>
+                            <div className="space-y-3">
+                                {/*
+                                    { name: "Rajesh K.", location: "Mumbai", time: "2 minutes ago" },
+                                    { name: "Priya S.", location: "Delhi", time: "5 minutes ago" },
+                                    { name: "Amit P.", location: "Bangalore", time: "8 minutes ago" },
+                                    { name: "Sneha M.", location: "Pune", time: "12 minutes ago" }
+                                */}
+                                { [
+                                    { name: "Rajesh K.", location: "Chennai", time: "2 minutes ago" },
+                                    { name: "Priya S.", location: "Bangalore", time: "5 minutes ago" },
+                                    { name: "Arjun M.", location: "Hyderabad", time: "8 minutes ago" },
+                                    { name: "Kavitha R.", location: "Kochi", time: "12 minutes ago" }
+                                ].map((purchase, index) => (
+                                    <div key={index} className="flex items-center justify-between text-white border-b border-white/20 pb-2">
+                                        <div>
+                                            <span className="font-medium">{purchase.name}</span>
+                                            <span className="text-red-200 text-sm ml-2">{purchase.location}</span>
+                                        </div>
+                                        <span className="text-green-300 text-xs">{purchase.time}</span>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+
+                        {/* Customer Count */}
+                        <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 text-center">
+                            <div className="text-4xl font-bold text-yellow-300 mb-2">10,000+</div>
+                            <div className="text-white font-medium">Satisfied Customers</div>
+                            <div className="text-red-200 text-sm">Join them today!</div>
+                        </div>
+
+                        {/* Risk-Free Guarantee */}
+                        <div className="bg-green-600/20 border border-green-400 rounded-xl p-6">
+                            <div className="text-center">
+                                <div className="text-3xl mb-2">🛡️</div>
+                                <h4 className="text-xl font-bold text-white mb-2">100% Risk-Free</h4>
+                                <p className="text-green-200 text-sm">Not satisfied? Get your money back within 30 days. No questions asked!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Bottom Warning */}
+                <div className="text-center mt-8">
+                    <div className="bg-red-700/50 border border-red-400 rounded-lg p-4 max-w-2xl mx-auto">
+                        <p className="text-white font-bold text-lg">⚠️ WARNING: Price will return to ₹6,990 after this sale!</p>
+                        <p className="text-red-200 text-sm">This is your last chance to get Dr. Alcofree at this special price</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+};
+
 
 
 
@@ -515,6 +822,8 @@ const Home = ({ currentLang, translations }) => {
                     <Hero currentLang={currentLang} />
                     <Product currentLang={currentLang} translations={translations} />
                     <ProductSection currentLang={currentLang} />
+                    <UrgencySection />
+                    <AmazonSection />
                     <FAQ currentLang={currentLang} translations={translations} />
                     <Testimonials currentLang={currentLang} translations={translations} />
                 </div>
