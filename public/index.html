@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+
+  <!-- Preconnect to external domains -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Preload critical CSS -->
+  <link rel="preload" href="%PUBLIC_URL%/static/css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+  <!-- Critical CSS inline (add your critical styles here) -->
+  <style>
+    /* Critical CSS for above-the-fold content */
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+    }
+
+    .loading-spinner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+  </style>
+
+  <!-- Load fonts with font-display: swap -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <meta name="description"
+    content="Dr. Joints provides natural Ayurvedic solutions for joint pain relief, promoting flexibility and recovery with premium oils crafted from traditional herbs.,  Discover Dr. Joint’s natural tips to ease chronic joint pain, reduce inflammation, and improve mobility—no medication needed. Move freely again. " />
+
+  <meta name="keywords"
+    content="Ayurvedic joint pain relief oil, muscle pain relief, natural remedies, herbal oil for arthritis, joint strengthening oil, Dr. Joints Chronic Joint Pain    " />
+
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo.png" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <title> Dr. Joints- Ayurvedic Body joints & Muscles Pain relief oil </title>
+  <meta property="og:image" content="assets/img/logo.png" />
+  <link rel="icon" href="assets/img/logo.png" />
+  <link rel="apple-touch-icon-precomposed" href="assets/img/logo.png" />
+  <meta name="msapplication-TileImage" content="assets/img/logo.png" />
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KHGK2S5D');</script>
+  <!-- End Google Tag Manager -->
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHGK2S5D"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div id="root"></div>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L16EPQ1Y4N"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-L16EPQ1Y4N');
+  </script>
+</body>
+
+</html>
