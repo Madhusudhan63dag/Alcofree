@@ -10,6 +10,9 @@ import one from '../assets/t_one.webp';
 import two from '../assets/t_two.webp';
 import three from '../assets/t_three.webp';
 import four from '../assets/t_four.webp';
+import amazon from '../assets/imagess/amazon1.webp'
+import amazon2 from '../assets/imagess/amazon.webp';
+import cart from '../assets/imagess/cart.png';
 
 
 const logoCarouselStyles = `
@@ -389,16 +392,10 @@ const AmazonSection = () => {
                     <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-200 hover:shadow-2xl transition-all duration-300">
                         <div className="grid md:grid-cols-2 gap-0">
                             {/* Amazon Logo Side */}
-                            <div className="bg-gradient-to-br from-orange-500 to-yellow-500 p-12 flex items-center justify-center relative overflow-hidden">
+                            <div className=" p-12 flex items-center justify-center relative overflow-hidden">
                                 <div className="absolute inset-0 bg-grid-white/[0.1] bg-[size:20px_20px]" />
                                 <div className="relative z-10 text-center">
-                                    <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center mb-6 mx-auto shadow-lg">
-                                        <svg className="w-12 h-12 text-orange-600" fill="currentColor" viewBox="0 0 24 24">
-                                            <path d="M13.12 2.06L7.58 7.6c-.37.37-.58.88-.58 1.41V19c0 1.1.9 2 2 2h9c.8 0 1.52-.48 1.84-1.21l3.26-7.61C23.94 10.2 22.49 8 20.34 8H14.5l1.76-5.24c.15-.45-.24-.81-.69-.81-.23 0-.45.09-.61.24z"/>
-                                        </svg>
-                                    </div>
-                                    <h3 className="text-3xl font-bold text-white mb-2">Amazon</h3>
-                                    <p className="text-orange-100 text-lg">Trusted Marketplace</p>
+                                    <img src={amazon} alt="Amazon Logo" className="" />
                                 </div>
                             </div>
 
@@ -450,10 +447,12 @@ const AmazonSection = () => {
                                         href="https://www.amazon.in/Dr-Alcofree-Natural-Alcohol-Recovery/dp/B0B28KXNL7" 
                                         target="_blank" 
                                         rel="noopener noreferrer"
-                                        className="amazon flex-1 bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded-lg text-center transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                                        className="amazon flex justify-center items-center border-2 border-orange-500 flex-1 bg-white text-black font-semibold py-3 px-6 rounded-lg text-center transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
                                     >
-                                        Shop on Amazon
+                                        <img src={amazon2} alt="Amazon Logo" className="w-10" />
+                                        Amazon
                                     </a>
+                                    
                                     <a 
                                         href="/product"
                                         className="flex-1 border-2 border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white font-semibold py-3 px-6 rounded-lg text-center transition-all duration-300"

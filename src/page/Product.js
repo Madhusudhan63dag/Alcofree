@@ -4,9 +4,12 @@ import product1 from '../assets/imagess/4.webp';
 import product2 from '../assets/imagess/3.webp';
 import product3 from '../assets/imagess/2.webp';
 
-import amazon from '../assets/icons/amazon.webp';
+// import amazon from '../assets/icons/amazon.webp';
 import flipkart from '../assets/icons/flipkart.webp';
 import stamps from '../assets/icons/stamps.webp';
+import amazon from '../assets/imagess/amazon1.webp'
+import amazon2 from '../assets/imagess/amazon.webp';
+import cart from '../assets/imagess/cart.png';
 
 
 import one from '../assets/imagess/ingeration/1.webp';
@@ -354,20 +357,18 @@ const Product = ({ translations, currentLang }) => {
                                         </button>
 
                                         {/* Amazon Button */}
-                                        <div className="flex gap-2 mb-3">
-                                            <button onClick={handleCheckout} className="flex-1 bg-green-600 hover:bg-green-700 text-white py-3 rounded-xl text-lg font-bold transition-all duration-300 shadow-lg">
+                                        <div className="flex  gap-2 mb-3">
+                                            <button onClick={handleCheckout} className="w-1/2 flex-1 bg-white text-black py-3 rounded-xl text-lg font-bold transition-all duration-300 shadow-lg">
+                                                <img src={cart} alt="Cart Icon" className="w-10 inline-block mr-2" />
                                                 Buy Direct
                                             </button>
-                                            <a 
+                                            <button
                                                 id="amazon"
-                                                href="https://www.amazon.in/Dr-Alcofree-Natural-Alcohol-Recovery/dp/B0B28KXNL7" 
-                                                target="_blank" 
-                                                rel="noopener noreferrer"
-                                                className="amazon flex-1 bg-orange-500 hover:bg-orange-600 text-white py-3 rounded-xl text-lg font-bold text-center transition-all duration-300 shadow-lg flex items-center justify-center"
-                                            >
-                                                <span className="mr-2">🛒</span>
-                                                Amazon
-                                            </a>
+                                                className="amazon w-1/2 bg-white hover:bg-white text-black py-4 rounded-xl text-lg font-black transform active:scale-95 transition-all duration-200 shadow-lg">
+                                                <a href="https://www.amazon.in/Dr-Alcofree-Natural-Alcohol-Recovery/dp/B0B28KXNL7" target="_blank" rel="noopener noreferrer">
+                                                    <img src={amazon} alt="Amazon Logo" className="w-28 mx-auto " />
+                                                </a>
+                                            </button>
                                         </div>
 
                                         <div className="text-center text-yellow-200 text-sm font-bold animate-pulse">
@@ -601,9 +602,9 @@ const Product = ({ translations, currentLang }) => {
                                         href="https://www.amazon.in/Dr-Alcofree-Natural-Alcohol-Recovery/dp/B0B28KXNL7" 
                                         target="_blank" 
                                         rel="noopener noreferrer"
-                                        className="flex-1 bg-orange-500 hover:bg-orange-600 text-white py-3 rounded-xl text-sm font-bold text-center transition-all duration-300 flex items-center justify-center"
+                                        className="flex-1 bg-white text-black py-3 rounded-xl text-sm font-bold text-center transition-all duration-300 flex items-center justify-center"
                                     >
-                                        <span className="mr-1">🛒</span>
+                                        <img src={amazon2} alt="Amazon" className="w-6 h-6 inline-block mr-2" />
                                         Amazon
                                     </a>
                                 </div>
