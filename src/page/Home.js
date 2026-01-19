@@ -13,7 +13,13 @@ import four from '../assets/t_four.webp';
 import amazon from '../assets/imagess/amazon1.webp'
 import amazon2 from '../assets/imagess/amazon.webp';
 import cart from '../assets/imagess/cart.png';
-
+import card1 from '../assets/pr/card1.webp';
+import card2 from '../assets/pr/card2.webp';
+import card3 from '../assets/pr/card3.webp';
+import card4 from '../assets/pr/card4.webp';
+import card5 from '../assets/pr/card5.webp';
+import card6 from '../assets/pr/card6.webp';
+import card7 from '../assets/pr/card7.webp';
 
 const logoCarouselStyles = `
     @keyframes scrollx {
@@ -53,6 +59,8 @@ const Hero = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
     const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
     const timerRef = useRef(null);
+    const [currentPrSlide, setCurrentPrSlide] = useState(0);
+    const prSliderRef = useRef(null);
 
     const desktopImages = [
         { url: banner1, alt: "Dr. Joints Pain Relief oil." },
@@ -84,7 +92,45 @@ const Hero = () => {
             window.removeEventListener('resize', handleResize);
         };
     }, [images.length, isMobile]);
+    const prData = [
+        {
+          image: card1,
+          title: "Empowering a healthier tomorrow – featured in Dailyhunt",
+        },
+        {
+          image: card2,
+          title: "Dr. Alcofree: A natural step towards freedom – Republic NewsIndia",
+        },
+        {
+          image: card3,
+          title: "Flipboard shares the Ayurvedic journey to quit alcohol naturally",
+        },
+        {
+          image: card4,
+          title: "The Indian Bulletin highlights a herbal breakthrough in addiction care",
+        },
+        {
+          image: card5,
+          title: "RD Times.in calls it 'The wellness path for mindful living'",
+        },
+        {
+          image: card6,
+          title: "Abhyuday Times features India's herbal answer to alcohol dependence",
+        },
+        {
+          image: card7,
+          title: "Indian Sentinel: Ancient wisdom meets modern recovery",
+        }
+      ];
+      
 
+      useEffect(() => {
+        const interval = setInterval(() => {
+          setCurrentPrSlide((prev) => (prev + 1) % prData.length);
+        }, 4000);
+        return () => clearInterval(interval);
+      }, [prData.length]);
+    
     return (
         <div className="w-full">
             <div className="relative w-full h-auto overflow-hidden">
@@ -102,13 +148,53 @@ const Hero = () => {
                     </div>
                 ))}
             </div>
+            <section className="w-full bg-white ">
+              <div className="">
+                {/* Main PR Slider */}
+                <div className="relative">
+                  <div className="overflow-hidden">
+                    <div 
+                      ref={prSliderRef}
+                      className="flex transition-transform duration-700 ease-in-out"
+                      style={{ transform: `translateX(-${currentPrSlide * 100}%)` }}
+                    >
+                      {prData.map((item, index) => (
+                        <div key={index} className="w-full flex-shrink-0">
+                          <div className="relative bg-white">
+                            <div className="flex flex-col md:flex-row h-full">
+                              {/* Image Section */}
+                              <div className="w-full md:w-2/5 relative">
+                                <img
+                                  src={item.image}
+                                  alt={item.title}
+                                  fill
+                                  className="object-contain mt-3"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-r from-black/20 to-transparent"></div>
+                              </div>
+                              
+                              {/* Content Section */}
+                              <div className="w-full md:w-3/5 pb-0 p-8 md:p-12 flex flex-col justify-center bg-white">
+                                <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
+                                  {item.title}
+                                </h3>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  </div>
+              </div>
+            </section>
         </div>
     );
 };
 
 const ProductSection = () => {
     return (
-        <div className="w-full bg-gradient-to-b from-white to-gray-50 mb-10">
+        <div className="w-full bg-gradient-to-b from-white to-gray-50 mb-0 md:mb-10">
             <h2 className="text-4xl font-bold text-center text-green-800 mb-4">Dr. Alcofree Herbal Support</h2>
             <p className="text-center text-gray-600 mb-12">Your Natural Companion for an Alcohol-Free Life</p>
 
@@ -138,7 +224,7 @@ const Product = ({ currentLang, translations }) => {
     return (
         <div ref={productRef} className="min-h-screen relative">
             {/* Rest of the Product section */}
-            <div className="p-8">
+            <div className="p-0 md:p-8">
                 <div className="text-center mb-8">
                     <h1 className="text-blue-900 text-4xl font-bold mb-4">{translations[currentLang].product.title}</h1>
                     <h2 className="text-amber-800 text-2xl font-semibold">{translations[currentLang].product.subtitle}</h2>

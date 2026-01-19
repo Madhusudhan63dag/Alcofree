@@ -1,87 +1,190 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <!-- Homepage - Dr. Alcofree Natural Alcohol Recovery -->
    <url>
-      <loc>https://drjoints.in/</loc>
-      <lastmod>2025-04-18</lastmod>
+      <loc>https://dralcofree.com/</loc>
+      <lastmod>2025-07-15</lastmod>
       <changefreq>weekly</changefreq>
       <priority>1.0</priority>
    </url>
+   
+   <!-- About Dr. Alcofree -->
    <url>
-      <loc>https://drjoints.in/about</loc>
-      <lastmod>2025-04-18</lastmod>
+      <loc>https://dralcofree.com/about</loc>
+      <lastmod>2025-07-15</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
    </url>
+   
+   <!-- Dr. Alcofree Product -->
    <url>
-      <loc>https://drjoints.in/product</loc>
-      <lastmod>2025-04-18</lastmod>
+      <loc>https://dralcofree.com/product</loc>
+      <lastmod>2025-07-15</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.9</priority>
    </url>
+   
+   <!-- How Dr. Alcofree Works -->
    <url>
-      <loc>https://drjoints.in/return</loc>
-      <lastmod>2025-04-18</lastmod>
+      <loc>https://dralcofree.com/how-it-works</loc>
+      <lastmod>2025-07-15</lastmod>
       <changefreq>monthly</changefreq>
-      <priority>0.6</priority>
+      <priority>0.8</priority>
    </url>
+   
+   <!-- Customer Success Stories -->
    <url>
-      <loc>https://drjoints.in/privacy</loc>
-      <lastmod>2025-04-18</lastmod>
-      <changefreq>yearly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://drjoints.in/contact</loc>
-      <lastmod>2025-04-18</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.7</priority>
-   </url>
-   <url>
-      <loc>https://drjoints.in/checkouts</loc>
-      <lastmod>2025-04-18</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.6</priority>
-   </url>
-   <url>
-      <loc>https://drjoints.in/terms</loc>
-      <lastmod>2025-04-18</lastmod>
-      <changefreq>yearly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://drjoints.in/cancel</loc>
-      <lastmod>2025-04-18</lastmod>
-      <changefreq>yearly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://drjoints.in/shipping</loc>
-      <lastmod>2025-04-18</lastmod>
-      <changefreq>yearly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://drjoints.in/blog</loc>
-      <lastmod>2025-04-18</lastmod>
+      <loc>https://dralcofree.com/testimonials</loc>
+      <lastmod>2025-07-15</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
    </url>
+   
+   <!-- Recovery Journey Guide -->
    <url>
-      <loc>https://drjoints.in/blog/1</loc>
-      <lastmod>2025-04-18</lastmod>
+      <loc>https://dralcofree.com/recovery-guide</loc>
+      <lastmod>2025-07-15</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
    </url>
+   
+   <!-- FAQ - Frequently Asked Questions -->
    <url>
-      <loc>https://drjoints.in/blog/2</loc>
-      <lastmod>2025-04-18</lastmod>
+      <loc>https://dralcofree.com/faq</loc>
+      <lastmod>2025-07-15</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
    </url>
+   
+   <!-- Contact & Support -->
    <url>
-      <loc>https://drjoints.in/blog/3</loc>
-      <lastmod>2025-04-18</lastmod>
+      <loc>https://dralcofree.com/contact</loc>
+      <lastmod>2025-07-15</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
+   </url>
+   
+   <!-- Order & Checkout -->
+   <url>
+      <loc>https://dralcofree.com/order</loc>
+      <lastmod>2025-07-15</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   
+   <!-- Privacy Policy -->
+   <url>
+      <loc>https://dralcofree.com/privacy</loc>
+      <lastmod>2025-07-15</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.5</priority>
+   </url>
+   
+   <!-- Terms & Conditions -->
+   <url>
+      <loc>https://dralcofree.com/terms</loc>
+      <lastmod>2025-07-15</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.5</priority>
+   </url>
+   
+   <!-- Return & Refund Policy -->
+   <url>
+      <loc>https://dralcofree.com/return-policy</loc>
+      <lastmod>2025-07-15</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.6</priority>
+   </url>
+   
+   <!-- Shipping Information -->
+   <url>
+      <loc>https://dralcofree.com/shipping</loc>
+      <lastmod>2025-07-15</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.5</priority>
+   </url>
+   
+   <!-- Cancellation Policy -->
+   <url>
+      <loc>https://dralcofree.com/cancellation</loc>
+      <lastmod>2025-07-15</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.5</priority>
+   </url>
+   
+   <!-- Blog - Recovery Tips & Articles -->
+   <url>
+      <loc>https://dralcofree.com/blog</loc>
+      <lastmod>2025-07-15</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   
+   <!-- Blog Articles -->
+   <url>
+      <loc>https://dralcofree.com/blog/natural-alcohol-recovery-methods</loc>
+      <lastmod>2025-07-15</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+   </url>
+   
+   <url>
+      <loc>https://dralcofree.com/blog/ayurvedic-approach-to-addiction</loc>
+      <lastmod>2025-07-15</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+   </url>
+   
+   <url>
+      <loc>https://dralcofree.com/blog/herbs-for-alcohol-recovery</loc>
+      <lastmod>2025-07-15</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+   </url>
+   
+   <url>
+      <loc>https://dralcofree.com/blog/support-family-during-recovery</loc>
+      <lastmod>2025-07-15</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+   </url>
+   
+   <url>
+      <loc>https://dralcofree.com/blog/success-stories-alcohol-recovery</loc>
+      <lastmod>2025-07-15</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+   </url>
+   
+   <!-- Support & Resources -->
+   <url>
+      <loc>https://dralcofree.com/support</loc>
+      <lastmod>2025-07-15</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+   </url>
+   
+   <!-- Dosage & Usage Guide -->
+   <url>
+      <loc>https://dralcofree.com/dosage-guide</loc>
+      <lastmod>2025-07-15</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+   </url>
+   
+   <!-- Ingredients & Science -->
+   <url>
+      <loc>https://dralcofree.com/ingredients</loc>
+      <lastmod>2025-07-15</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+   </url>
+   
+   <!-- Track Your Progress -->
+   <url>
+      <loc>https://dralcofree.com/track-progress</loc>
+      <lastmod>2025-07-15</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.6</priority>
    </url>
 </urlset>

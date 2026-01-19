@@ -1,0 +1,198 @@
+# Dr. Alcofree - Natural Alcohol Recovery Platform
+
+## Project Overview
+Dr. Alcofree is a React-based web application focused on natural alcohol recovery solutions using Ayurvedic and herbal approaches. The platform provides information, products, and support for individuals seeking to overcome alcohol addiction through natural methods.
+
+## Technology Stack
+- **Frontend**: React 18.3.1
+- **Styling**: Tailwind CSS
+- **Icons**: Lucide React
+- **Build Tool**: Create React App
+- **Language**: JavaScript (ES6+)
+
+## Project Structure
+```
+src/
+├── components/          # Reusable UI components
+├── pages/              # Page components
+├── schemas/            # Data validation schemas
+├── assets/             # Images, fonts, static files
+├── utils/              # Utility functions
+└── styles/             # CSS and styling files
+
+public/
+├── sitemap/            # SEO sitemap files
+├── favicon.ico         # Site icon
+├── index.html          # Main HTML template
+└── manifest.json       # PWA manifest
+
+schemas/
+├── product.schema.js   # Product data validation
+├── user.schema.js      # User/customer data
+├── order.schema.js     # Order processing
+├── testimonial.schema.js # Success stories
+├── common.schema.js    # Shared structures
+└── index.js           # Schema exports & config
+```
+
+## Business Context
+Dr. Alcofree specializes in:
+- **Natural Alcohol Recovery**: Herbal supplements for alcohol cessation
+- **Ayurvedic Approach**: Traditional Indian medicine for addiction treatment
+- **Customer Success Stories**: Testimonials from recovered individuals
+- **Recovery Journey Tracking**: Progress monitoring and support
+- **Indian Market Focus**: INR pricing, local shipping, regional languages
+
+## Key Features
+- Product catalog for herbal supplements
+- Customer testimonials and success stories
+- Recovery journey tracking and progress monitoring
+- Multi-language support (English, Hindi, Telugu, Tamil, etc.)
+- Indian payment integration and shipping
+- Educational content about natural recovery methods
+- Customer support and consultation booking
+
+## Schema System
+The project uses a comprehensive schema system for data validation:
+
+### Recovery-Specific Data Structures
+- **Recovery Stages**: considering, just_started, in_progress, maintaining, supporting_others
+- **Alcohol Usage Patterns**: daily, weekly, occasionally, heavy, stopped
+- **Product Categories**: herbal_supplement, ayurvedic, natural_remedy
+- **Results Timeline**: immediate, within_week, within_month, gradual
+
+### Validation Features
+- Indian phone number validation (10-15 digits)
+- Indian postal code validation (6 digits)
+- INR currency support
+- Multi-language content validation
+- Recovery-specific form validation
+
+## Target Audience
+- **Primary**: Individuals struggling with alcohol addiction
+- **Secondary**: Family members seeking support resources
+- **Geographic**: Primarily Indian market
+- **Age Range**: 25-55 years
+- **Interests**: Natural health, Ayurveda, recovery support
+
+## Content Strategy
+- Educational articles about natural recovery methods
+- Success stories and testimonials
+- Product information and usage guides
+- Recovery journey guidance
+- Scientific backing for herbal ingredients
+
+## SEO Structure
+```
+Homepage (/)                     - Priority 1.0
+Product (/product)               - Priority 0.9
+Order (/order)                   - Priority 0.8
+About (/about)                   - Priority 0.8
+How It Works (/how-it-works)     - Priority 0.8
+Testimonials (/testimonials)     - Priority 0.8
+Blog (/blog)                     - Priority 0.8
+Recovery Guide (/recovery-guide) - Priority 0.7
+FAQ (/faq)                       - Priority 0.7
+Contact (/contact)               - Priority 0.7
+```
+
+## Development Guidelines
+
+### Code Style
+- Use functional components with hooks
+- Implement proper error handling
+- Follow React best practices
+- Use Tailwind utility classes
+- Maintain responsive design
+
+### Schema Usage
+```javascript
+// Product validation example
+import { validateProduct } from './schemas';
+
+const productData = {
+  name: "Dr. Alcofree Natural Recovery Support",
+  category: "herbal_supplement",
+  price: { original: 6990, discounted: 3990, currency: "INR" },
+  ingredients: [
+    {
+      name: "Ashwagandha",
+      scientificName: "Withania somnifera",
+      description: "Reduces stress and anxiety during recovery"
+    }
+  ]
+};
+
+const validation = validateProduct(productData);
+```
+
+### Testimonial Management
+```javascript
+// Testimonial with recovery info
+import { createDefaultTestimonial } from './schemas';
+
+const testimonial = {
+  name: "Rajesh Kumar",
+  location: "Mumbai, Maharashtra",
+  text: "Dr. Alcofree helped me quit alcohol naturally",
+  rating: 5,
+  recoveryInfo: {
+    alcoholUsageBefore: "daily",
+    usageDuration: "3 months",
+    recoveryStage: "maintaining",
+    resultsSeen: "within_month"
+  }
+};
+```
+
+## Marketing Focus
+- **Natural & Safe**: Emphasize herbal, side-effect-free approach
+- **Scientifically Backed**: Highlight research and certifications
+- **Success Stories**: Showcase real customer recoveries
+- **Family Support**: Include family members in recovery journey
+- **Cultural Sensitivity**: Respect Indian values and traditions
+
+## Compliance Requirements
+- **AYUSH Ministry**: Comply with Indian herbal medicine regulations
+- **Drug Controller General**: Follow supplement guidelines
+- **Consumer Protection**: Transparent pricing and refund policies
+- **Privacy Laws**: Protect customer recovery information
+- **Medical Disclaimers**: Clear statements about professional consultation
+
+## Performance Optimization
+- Image optimization for product galleries
+- Lazy loading for testimonials
+- SEO-friendly URL structure
+- Mobile-first responsive design
+- Fast loading times for better user experience
+
+## Integration Points
+- **Payment Gateway**: Indian payment methods (UPI, cards, wallets)
+- **Shipping Partners**: Indian courier services
+- **Customer Support**: WhatsApp, phone, email support
+- **Analytics**: Recovery journey tracking and success metrics
+- **Email Marketing**: Recovery tips and product updates
+
+## Security Considerations
+- Secure customer data handling
+- HTTPS implementation
+- Input validation and sanitization
+- Protected testimonial consent
+- Safe payment processing
+
+## Future Enhancements
+- Mobile app development
+- Telemedicine integration
+- AI-powered recovery recommendations
+- Community support features
+- Progress tracking dashboard
+- Multi-language expansion
+
+## Brand Guidelines
+- **Tone**: Compassionate, professional, hopeful
+- **Colors**: Calming greens, natural earth tones
+- **Messaging**: Focus on natural healing and recovery success
+- **Imagery**: Natural ingredients, happy families, recovery journeys
+- **Values**: Trust, safety, natural healing, family support
+
+This LLM.txt provides comprehensive context for AI assistants working on the Dr. Alcofree project, covering technical implementation, business requirements, and user experience considerations specific to the natural alcohol recovery domain in the Indian market.

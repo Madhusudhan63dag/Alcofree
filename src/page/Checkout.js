@@ -2,13 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 
 // API base URL that works in both development and production environments
-const API_BASE_URL = process.env.NODE_ENV === 'production' 
-    ? 'https://alcofree-apis.onrender.com'
-    : 'https://alcofree-apis.onrender.com';
+const API_BASE_URL = "https://alcofree-apis.vercel.app"
 
 const COUNTRY_CURRENCY_MAP = {
     'India': { currency: 'INR', symbol: '₹', rate: 1, basePrice: 3990 },
-    'United States': { currency: 'USD', symbol: '$', rate: 1, basePrice: 120 }
 };
 
 const DEFAULT_COUNTRY = 'India';
